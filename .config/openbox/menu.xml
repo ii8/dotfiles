@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="root-menu" label="Openbox 3">
+
+
+	<separator label="For one moment" />
+	<item label="Terminal">
+		<action name="Execute"><command>bash -c 'DISPLAY_ARCHEY="on"; export DISPLAY_ARCHEY; xterm'</command></action>
+	</item>
+	<item label="Internet">
+		<action name="Execute"><command>firefox</command></action>
+	</item>
+
+	<separator />
+
+	<menu id="apps-editors-menu" label="Editors">
+		<item label="LeafPad">
+			<action name="Execute"><command>leafpad --tab-width=4</command></action>
+		</item>
+		<item label="Geany">
+			<action name="Execute"><command>geany</command></action>
+		</item>
+	</menu>
+
+	<menu id="apps-graphics-menu" label="Graphics">
+		<item label="Gimp">
+			<action name="Execute"><command>gimp</command></action>
+		</item>
+		<item label="Blender">
+			<action name="Execute"><command>blender</command></action>
+		</item>
+	</menu>
+
+	<menu id="apps-media-menu" label="Multimedia">
+		<item label="Steam">
+			<action name="Execute"><command>steam</command></action>
+		</item>
+		<item label="Teamspeak">
+			<action name="Execute"><command>teamspeak3</command></action>
+		</item>
+		<item label="Audacity">
+			<action name="Execute"><command>audacity</command></action>
+		</item>
+		<item label="Kdenlive">
+			<action name="Execute"><command>kdenlive</command></action>
+		</item>
+		<item label="Avidemux">
+			<action name="Execute"><command>avidemux2_gtk</command></action>
+		</item>
+	</menu>
+
+	<menu id="apps-tools-menu" label="Tools">
+		<item label="Putty">
+			<action name="Execute"><command>putty</command></action>
+		</item>
+		<item label="File Zilla">
+			<action name="Execute"><command>filezilla</command></action>
+		</item>
+		<item label="Pulse Volume">
+			<action name="Execute"><command>pavucontrol</command></action>
+		</item>
+		<item label="Bitcoin">
+			<action name="Execute"><command>bitcoin-qt</command></action>
+		</item>
+	</menu>
+
+	<separator label="I wish you'd" />
+
+	<menu id="pipe_files" label="Files" execute="python ~/.pipes/files.py" />
+	<menu id="util-tools-menu" label="Utils">
+		<item label="Ethernet">
+			<action name="Execute"><command>sudo dhcpcd enp2s0</command></action>
+		</item>
+		<item label="root PCMan">
+			<action name="Execute"><command>sudo pcmanfm</command></action>
+		</item>
+		<item label="Setup audio">
+			<action name="Execute"><command>bash -c 'pacmd set-source-port 2 analog-input-front-mic; pacmd set-source-volume 2 50000'</command></action>
+		</item>
+		<menu id="util-tools-obox-menu" label="Openbox">
+			<item label="Themes">
+				<action name="Execute"><command>lxappearance</command></action>
+			</item>
+			<item label="Desktop">
+				<action name="Execute"><command>pcmanfm --desktop-pref</command></action>
+			</item>
+			<item label="Demo">
+				<action name="Execute"><command>gtk3-demo</command></action>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure" />
+			</item>
+			<item label="Merge X">
+				<action name="Execute"><command>xrdb -merge ~/.Xresources</command></action>
+			</item>
+			<item label="Start Effects">
+				<action name="Execute"><command>xcompmgr -cfF -t-15 -l-15 -r10 -D2 -I0.01 -O0.01</command></action>
+			</item>
+			<item label="Kill Effects">
+				<action name="Execute"><command>pkill xcompmgr</command></action>
+			</item>
+		</menu>
+
+		<menu id="pipe_pacman" label="Pacman" execute="~/.pipes/pacman.sh" />
+		<menu id="pipe_wallpaper" label="Set Wall" execute="python ~/.pipes/wallset.py" />
+		<!--<menu id="pipe_keybinder" label="Keybinder" execute="python2 ~/.pipes/keybind.py" />-->
+		<menu id="pipe_calendar" label="Calendar" execute="~/.pipes/calendar.sh" />
+		<menu id="pipe_processes" label="Processes" execute="perl ~/.pipes/processes" />
+
+	</menu>
+	<menu id="pipe_mplayer" label="MPlayer" execute="python ~/.pipes/mplayer.py" />
+
+	<separator label="Hold the stage" />
+
+	<item label="Lock">
+		<action name="Execute">
+			<command>slock</command>
+		</action>
+	</item>
+	<!--<item label="Sleep">
+		<action name="Execute">
+			<command>systemctl suspend</command>
+		</action>
+	</item>-->
+	<item label="Exit">
+		<action name="Exit">
+			<prompt>yes</prompt>
+		</action>
+	</item>
+
+</menu>
+
+
+<menu id="hidden-menu" label="Lol this is never visible">
+	<separator label="Voodoo" />
+	<item label="Wireshark">
+		<action name="Execute"><command>wireshark</command></action>
+	</item>
+	<item label="Ettercap">
+		<action name="Execute"><command>ettercap -G</command></action>
+	</item>
+</menu>
+</openbox_menu>
+
+

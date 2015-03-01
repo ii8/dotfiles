@@ -1,0 +1,84 @@
+! Ohpls Openbox theme.
+
+menu.items.bg: flat gradient vertical
+menu.items.bg.color: #303030
+menu.items.bg.colorTo: #080808
+
+menu.title.bg: raised vertical gradient
+menu.title.bg.color: #303030
+menu.title.bg.colorTo: #181818
+menu.title.text.color: white
+menu.title.text.justify: center
+
+menu.items.text.color: #b8b8b8
+menu.items.justify: left
+menu.items.disabled.text.color: #606060
+
+menu.items.active.bg: flat vertical gradient
+menu.items.active.bg.color: #f8b656
+menu.items.active.bg.colorTo: #e57507
+menu.items.active.text.color: #080808
+
+menu.separator.color: #333333
+menu.separator.width: 1
+menu.separator.padding.width: 6
+menu.separator.padding.height: 3
+
+menu.overlap: 2
+menu.items.font:shadow=y:shadowtint=30:shadowoffset=3
+
+window.active.title.bg: raised vertical gradient
+window.active.title.bg.color: #414141
+window.active.title.bg.colorTo: #202020
+window.inactive.title.bg: gradient vertical gradient flat
+window.inactive.title.bg.color: #414141
+window.inactive.title.bg.colorTo: #202020
+
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #f8f8f8
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #747474
+
+window.*.button.*.bg: parentrelative
+window.active.button.unpressed.bg: raised vertical gradient border
+window.active.button.*.hover.bg: raised vertical gradient border
+window.*.button.*.pressed.bg: sunken vertical gradient border
+
+window.active.button.unpressed.*.color: #f8b656
+window.active.button.unpressed.*.colorTo: #e57507
+
+window.active.button.*.hover.bg.color: #f8b656
+window.active.button.*.hover.bg.colorTo: #e57507
+window.active.button.*.hover.bg.border.color: #000000
+window.active.button.*.hover.image.color: #000000
+
+window.active.button.*.pressed.bg.color: #e57507
+window.active.button.*.pressed.bg.colorTo: #f8b656
+window.active.button.*.pressed.bg.border.color: #000000
+window.active.button.*.pressed.image.color: #000000
+
+window.active.button.*.image.color: #e0e0e0
+window.inactive.button.*.image.color: #747474
+
+window.active.border.color: #181818
+window.inactive.border.color: #131313
+window.inactive.title.separator.color: #131313
+border.width: 1
+padding.width: 2
+window.handle.width: 0
+window.active.client.color:  #181818
+window.inactive.client.color:  #181818
+window.client.padding.width: 1
+window.client.padding.height: 1
+
+!osd.border.width: 0
+osd.bg: flat horizontal gradient
+osd.bg.color: #303030
+osd.bg.colorTo: #080808
+osd.label.text.color: #fffff
+
+! if you want to change colors, search and replace these
+! e57507 orange
+! f8b656 light gold
+! the rest are shades of grey
