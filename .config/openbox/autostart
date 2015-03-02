@@ -6,11 +6,13 @@
 for number in 0 1 2 3 4 5 6 ;
 do
 	#suchcoolnum=$(( $number+1 ));
-	#suchcoolvar=`ls -1tu $HOME/.bg/.sym | tail -n -$suchcoolnum | head -n 1`;
+	#suchcoolvar=`ls -1tu /home/murray/.bg/.sym | tail -n -$suchcoolnum | head -n 1`;
+	
 	suchcoolvar=`ls -1tu $HOME/.bg/.sym | tail -n -1`;
 	touch -ahc $HOME/.bg/.sym/$suchcoolvar;
-	sed -i "s%$number\=$HOME.*%$number=$HOME/.bg/.sym/$suchcoolvar%" $HOME/.config/pcmanfm/default/desktop-items-0.conf;
+	sed -i "s%$number\=$HOME/.*%$number=$HOME/.bg/.sym/$suchcoolvar%" $HOME/.config/pcmanfm/default/desktop-items-0.conf;
 done;
+pcmanfm --desktop &
 
 #this is used by the openbox mplayer pipe menu
 mkfifo /tmp/mplayer-control &
