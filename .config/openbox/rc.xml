@@ -156,7 +156,8 @@
 	</dock>
 	<keyboard>
 		<chainQuitKey>C-g</chainQuitKey>
-		<!-- Keybindings for desktop switching -->
+		<keybind key="W-bracketright"><action name="GoToDesktop"><to>right</to><wrap>no</wrap></action></keybind>
+		<keybind key="W-bracketleft"><action name="GoToDesktop"><to>left</to><wrap>no</wrap></action></keybind>
 		<keybind key="W-Left"><action name="GoToDesktop"><to>left</to><wrap>no</wrap></action></keybind>
 		<keybind key="W-Right"><action name="GoToDesktop"><to>right</to><wrap>no</wrap></action></keybind>
 		<keybind key="W-Up"><action name="GoToDesktop"><to>up</to><wrap>no</wrap></action></keybind>
@@ -180,7 +181,7 @@
 		<keybind key="A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
 
 		<!-- Keybindings for window switching -->
-		<keybind key="W-Caps_Lock"><action name="ShowMenu"><menu>client-list-combined-menu</menu></action></keybind>
+		<keybind key="W-Escape"><action name="ShowMenu"><menu>client-list-combined-menu</menu></action></keybind>
 		<keybind key="W-Tab"><action name="NextWindow"><finalactions><action name="Focus"/><action name="Raise"/><action name="Unshade"/></finalactions></action></keybind>
 		<keybind key="W-grave"><action name="PreviousWindow"><finalactions><action name="Focus"/><action name="Raise"/><action name="Unshade"/></finalactions></action></keybind>
 

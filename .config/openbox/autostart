@@ -3,6 +3,8 @@
 #works with pcmanfm file manager but you need to make sure the lines in
 # $HOME/.config/pcmanfm/default/desktop-items-0.conf exist in the first place or else it can't change them
 
+#echo "`sed 's/$/\n%/' <(ls -1td $HOME/.bg/.sym/*)`" > lol
+
 for number in 0 1 2 3 4 5 6 ;
 do
 	#suchcoolnum=$(( $number+1 ));
