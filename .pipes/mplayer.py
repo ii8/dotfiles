@@ -9,7 +9,7 @@ from sys import argv
 
 home = os.environ['HOME']
 def play(what):
-	return 'bash -c \'mplayer -slave -input file=/tmp/mplayer-control -ao pulse -playlist &lt;(find "'+home+'/Music/'+what+'" -iregex ".*\.\(m4a\|mp3\)" -type f | sort)\''
+	return 'bash -c \'mplayer -slave -input file=/tmp/mplayer-control -ao pulse -shuffle -playlist &lt;(find "'+home+'/Music/'+what+'" -iregex ".*\.\(m4a\|mp3\)" -type f | sort)\''
 
 def cmd(name, wat):
 	ret = '<item label="'+name+'">'

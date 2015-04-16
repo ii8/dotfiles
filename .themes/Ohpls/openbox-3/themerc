@@ -76,7 +76,7 @@ window.client.padding.height: 1
 osd.bg: flat horizontal gradient
 osd.bg.color: #303030
 osd.bg.colorTo: #080808
-osd.label.text.color: #fffff
+osd.label.text.color: #ffffff
 
 ! if you want to change colors, search and replace these
 ! e57507 orange
