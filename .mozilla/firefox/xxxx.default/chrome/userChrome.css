@@ -1,0 +1,22 @@
+
+/*
+.tabbrowser-strip *[class^="scrollbutton"] {
+    display: none;
+}
+
+.tabbrowser-strip *[class^="tabs-alltabs"] {
+    display: none;
+}
+
+.tabbrowser-strip *[class^="tabs-newtab-button"] {
+    display: none;
+}
+
+#urlbar {
+}
+*/
+
+#menubar {
+	display: none;
+}
+

@@ -77,7 +77,7 @@
 			<action name="Execute"><command>sudo pcmanfm</command></action>
 		</item>
 		<item label="Setup audio">
-			<action name="Execute"><command>bash -c 'pacmd set-source-port 2 analog-input-front-mic; pacmd set-source-volume 2 50000'</command></action>
+			<action name="Execute"><command>bash -c 'pacmd set-source-port 2 analog-input-front-mic; pacmd set-source-volume 2 50000; pacmd set-sink-port 1 analog-output-headphones'</command></action>
 		</item>
 		<menu id="util-tools-obox-menu" label="Openbox">
 			<item label="Themes">

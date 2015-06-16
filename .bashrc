@@ -3,6 +3,10 @@
 #
 # Uses archey3, pacman, xterm, mplayer
 
+# I need this to build stuff on arch.
+# Not sure if its a distro specific thing.
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -10,6 +14,7 @@ alias ls='ls --color=yes'
 alias cool='cat ~/Downloads/cool'
 alias hello='echo hello $USER watsup!'
 alias starwars='telnet towel.blinkenlights.nl'
+alias weechat='weechat -d ~/.config/weechat'
 function music() { mplayer -input file=/tmp/mplayer-control $@ -playlist <(find "$HOME/Music/${@: -1}" -iregex ".*\.\(m4a\|mp3\)" -type f | sort); }
 
 alias archey='archey3'
@@ -24,6 +29,8 @@ test $DISPLAY_ARCHEY && ( archey3 -c magenta;)
 
 #PS1='[\u@\h \W]\$ '
 
-PS1='$ '
+PS1='>> '
+PS2='>>	'
+PS3='>>		'
 #espeak -s 150 "Go get a life and stop messing with bash, you noob!"
-export XDG_CONFIG_HOME=$HOME/.config
+#export XDG_CONFIG_HOME=$HOME/.config
