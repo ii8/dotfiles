@@ -20,6 +20,7 @@ filetype on
 set omnifunc=syntaxcomplete#Complete
 autocmd BufWinEnter * call matchadd('ErrorMsg', '\%>80v.\+', -1) "highlight text past col 80
 match Todo /\s\+$/
+set tags=./tags;/ "Search tags file up tree
 
 source /home/murray/.config/vim/askapache
 "source /home/murray/.config/vim/bubblegum
