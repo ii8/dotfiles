@@ -13,6 +13,20 @@ set smartcase "casesensitive if search contains upper
 
 set relativenumber "line numbers
 set ruler "show current line,column
+autocmd FocusLost * :set number
+autocmd WinLeave * :set number
+autocmd WinEnter * :set relativenumber
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+"autocmd CursorMoved * :set relativenumber
+
+"normal numbers when jumping greater distance
+nnoremap <silent> <C-u> <C-u>:set<Space>number<cr>
+nnoremap <silent> <C-d> <C-d>:set<Space>number<cr>
+nnoremap <silent> <C-f> <C-f>:set<Space>number<cr>
+nnoremap <silent> <C-b> <C-b>:set<Space>number<cr>
+nnoremap <silent> n n:set<Space>number<cr>
+nnoremap <silent> N N:set<Space>number<cr>
 
 "set textwidth=80
 "set lazyredraw
@@ -25,6 +39,7 @@ set omnifunc=syntaxcomplete#Complete
 set colorcolumn=80
 match Todo /\s\+$/
 set tags=./tags;/ "Search tags file up tree
+"TODO wite tags on save
 
 "scary remaps
 inoremap <C-j> <C-n>
